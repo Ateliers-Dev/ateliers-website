@@ -5,48 +5,67 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  emoji: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '個人開発ガイドライン',
+    emoji: '⚙️',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        個人開発における判断基準・設計方針・運用ルールをまとめたガイドラインです。
+        <br />
+        GitHub の使い方、コーディング方針などを含みます。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'テクニカル ノート',
+    emoji: '📚',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        技術的なドキュメントです。AI とのやりとりや技術解説の教育資料、技術的なメモを記録し、フィードバックを提供しています。
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'プロジェクト ナレッジ',
+    emoji: '🗂️',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Ateliers プロジェクトに関するナレッジベースです。GitHub のリポジトリからサブモジュール形式で取り込んでいます。
+      </>
+    ),
+  },
+  {
+    title: 'プロフィール',
+    emoji: '🪪',
+    description: (
+      <>
+        私のプロフィールです。経歴やスタックスキル、興味などについて記載しています。
+      </>
+    ),
+  },
+  {
+    title: 'FAQ',
+    emoji: '💬',
+    description: (
+      <>
+        よくある（かもしれない）質問についてまとめたセクションです。
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, emoji, description}: FeatureItem): ReactNode {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <div className={styles.featureEmoji} role="img" aria-label={title}>
+          {emoji}
+        </div>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
