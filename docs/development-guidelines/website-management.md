@@ -36,6 +36,55 @@ Project Knowledge は開発・研究の過程で得た知識を、主に開発�
 
 同じプロジェクトや成果物に関する情報でも、開発上の設計判断や検証結果は Project Knowledge、利用者向けの機能説明や使い方は Products に掲載します。あるプロジェクトが製品になった場合も、両者の役割を保ちます。
 
+## サイト構造の参考例
+
+以下は、現時点の運営方針に基づく情報構造の例です。利用者向けのナビゲーションとコンテンツ分類を示すもので、Docusaurus の物理的なディレクトリ構成を定めるものではありません。
+
+```text
+Ateliers-Dev
+├── Home
+│   └── サイト概要・主要コンテンツへの案内
+├── Development Guidelines
+│   ├── GitHub Guidelines
+│   │   ├── Repository Management
+│   │   ├── Branch Strategy
+│   │   └── Pull Request Guidelines
+│   ├── Technical Policies
+│   │   ├── Coding Standards
+│   │   ├── Design Principles
+│   │   ├── Testing Guidelines
+│   │   └── Security Policies
+│   └── Website Management
+│       └── サイト運営方針（本ドキュメント）
+├── Project Knowledge
+│   ├── Ateliers AI
+│   │   ├── AI Orchestrator
+│   │   │   ├── Architecture
+│   │   │   ├── Technical Decisions
+│   │   │   └── Troubleshooting
+│   │   └── AI Skills
+│   │       ├── Design
+│   │       └── Verification
+│   └── Ateliers Voice
+│       └── Technical Knowledge
+├── Products
+│   ├── Product A
+│   │   ├── Overview
+│   │   ├── Getting Started
+│   │   ├── User Guide
+│   │   └── Release Notes
+│   └── Product B
+│       └── Overview
+└── About
+    ├── Overview
+    ├── Projects
+    │   ├── Ateliers AI
+    │   └── Ateliers Voice
+    └── Community
+```
+
+この例は完成形や必須ページの一覧ではありません。`Product A` と `Product B` は構造を示すための仮名であり、掲載する製品を確定するものではありません。実際のコンテンツや運用状況に応じて、項目の統合・分割・名称変更を行います。Project Knowledge は各開発リポジトリで原本を管理し、サイトから参照または自動連携する方法も選択できます。構造を維持すること自体を目的にせず、利用者が必要な情報へアクセスしやすいことを優先します。
+
 ## About / Projects の紹介方針
 
 Projects はリポジトリ一覧ではなく、Ateliers-Dev の活動領域やシリーズを紹介する入口とします。各領域の概要を簡潔に説明し、代表的なリポジトリを最大3件まで掲載します。全リポジトリを網羅せず、個々の実装や詳細は各リポジトリの README と GitHub に案内します。
@@ -59,13 +108,3 @@ Projects はリポジトリ一覧ではなく、Ateliers-Dev の活動領域や�
 ## 共通方針とサイト固有の技術情報
 
 複数のプロジェクトで再利用できる規約や共通プロセスは Development Guidelines に記録します。Docusaurus の構成、サイト固有の CI/CD、ビルドや公開の技術的な検証・運用情報は、`ateliers-website` の Project Knowledge に記録します。
-
-関連する既存 Issue の配置方針は次のとおりです。
-
-| Issue | 記録先 | 内容 |
-| --- | --- | --- |
-| #1 | Development Guidelines | xUnit を用いたテスト作成規約 |
-| #2 | Development Guidelines | 共通プロセスの文字コード・UTF-8 入出力規約 |
-| #2 | Project Knowledge | Codex 固有の検証結果、障害情報、トラブルシューティング |
-
-Issue #2 は、共通して再利用できる規約と Codex に固有の記録をそれぞれの場所に整理します。
