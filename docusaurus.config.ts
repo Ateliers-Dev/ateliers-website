@@ -56,6 +56,12 @@ const config: Config = {
       },
       items: [
         {
+          type: 'docSidebar',
+          sidebarId: 'developmentGuidelinesSidebar',
+          label: 'Development Guidelines',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/Ateliers-Dev',
           label: 'GitHub',
           position: 'right',
