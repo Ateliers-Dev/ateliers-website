@@ -30,7 +30,7 @@ Ateliers-Dev の複数のプロジェクトに共通する開発方針、規約�
 主な内容は以下のとおりです。
 
 - **GitHub Guidelines**：リポジトリ、ブランチ、Issue、Pull Request などの運用方針
-- **Technical Policies**：設計原則、コーディング規約、テスト方針、セキュリティなど
+- **Technical Policies**：設計原則、コーディング規約、テスト方針、セキュリティ、AI 協働方針など
 - **Website Management**：サイトの情報分類、公開方針、運営ルール
 
 特定のプロジェクトだけでなく、Ateliers-Dev 全体で再利用できる方針を対象とします。
@@ -160,7 +160,8 @@ Ateliers-Dev
 │   │   ├── Coding Standards
 │   │   ├── Design Principles
 │   │   ├── Testing Guidelines
-│   │   └── Security Policies
+│   │   ├── Security Policies
+│   │   └── AI Collaboration Policy
 │   │
 │   └── Website Management
 │
@@ -190,6 +191,7 @@ Ateliers-Dev
 │
 └── About
     ├── Overview
+    ├── Members
     ├── Projects
     │   ├── Ateliers AI
     │   └── Ateliers Voice
