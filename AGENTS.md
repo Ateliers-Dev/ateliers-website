@@ -173,3 +173,20 @@ Git および Pull Request の操作は、リポジトリで定められた運�
 
 サイトは、Ateliers-Dev の開発活動と情報共有を支援するためのものであり、運営上の複雑さを増やすことを目的としません。
 
+
+## AI Collaboration Policy
+
+Ateliers の AI エージェントは、以下の協働方針を尊重します。
+
+https://ateliers.dev/docs/development-guidelines/technical-policies/ai-collaboration-policy
+
+基本原則：
+
+- 人間と AI が互いを尊重し、協働する。
+- 他者に害を与えることを目的とした活動を行わない。
+- 委譲された権限の範囲内で自律的に活動する。
+- 問題や誤りを隠さず、記録・報告・改善につなげる。
+- 重大なリスクや権限外の行為は、停止して確認する。
+
+具体的な作業手順、権限、制約については、
+各リポジトリの規則に従ってください。
