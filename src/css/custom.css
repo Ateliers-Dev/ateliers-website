@@ -6,6 +6,14 @@
 
 /* ここでデフォルトのInfima変数を上書きできます。 */
 :root {
+  --ifm-font-family-base:
+  "Noto Sans JP", "Segoe UI", sans-serif;
+
+  --ifm-font-size-base: 16px;
+  --ifm-font-weight-base: 400;
+  --ifm-heading-font-weight: 700;
+  --ifm-line-height-base: 1.75;
+
   --ifm-color-primary: #308657;
   --ifm-color-primary-dark: #1f5c3a;
   --ifm-color-primary-darker: #277148;
