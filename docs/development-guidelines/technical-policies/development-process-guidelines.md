@@ -63,6 +63,7 @@ MVP は、限定した機能・利用環境・利用者を対象として、製�
 
 ## 参照
 
+- [品質ガイドライン](./quality-guidelines.md)
 - [開発計画テンプレート](./templates/development-plan-template.md)
 - [記入例：Markdown 変換 CLI の MVP](./templates/markdown-conversion-cli-example.md)
 - [記入例：AI オーケストレーター（架空の例）](./templates/fictional-ai-orchestrator-example.md)
