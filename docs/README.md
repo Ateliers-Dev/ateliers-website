@@ -31,6 +31,7 @@ unlisted: true
 - [継続的改善の記録一覧](development-guidelines/continuous-improvement/README.md)：再利用可能な改善事例。
 - [哲学と目標](development-guidelines/philosophy.md)：Ateliers の理念と目標の詳細な原本。
 - [Technical Policies README](development-guidelines/technical-policies/README.md)：共通の技術・開発方針と下位フォルダの案内。
+- [Issue Type・共通ラベル運用方針](https://github.com/Ateliers-Dev/.github/blob/main/docs/issue-classification-and-label-policy.md)：組織 Issue Type と共通ラベルの正本。
 - [AI 協働方針](development-guidelines/technical-policies/ai-collaboration-policy.md)：AI エージェントの協働原則と権限の扱い。
 - [AGENTS.md 作成ガイドライン](development-guidelines/technical-policies/agent-instructions-guidelines.md)：リポジトリ向け AI 作業指示の作成・配置・更新。
 - [開発プロセスガイドライン](development-guidelines/technical-policies/development-process-guidelines.md)：計画から完了までの共通プロセス。
