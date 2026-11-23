@@ -49,7 +49,7 @@ PR上の記録では独立した静的レビューに阻害指摘はなく、レ
 
 ### ACT-DOC-002：要約・レビューSkill — ateliers-ai-skills PR #35
 
-関連する検討: [IMP-DOC-001](#imp-doc-001詳細を保ったまま読者別の入口と粒度を整える)
+関連する検討: IMP-DOC-001
 
 [PR #35](https://github.com/Ateliers-Dev/ateliers-ai-skills/pull/35) は2026-11-23にマージされました。再利用可能な要約Skillを追加し、文書レビューSkillへ読者適合と概要・詳細間の整合性確認を加えました。
 
@@ -57,7 +57,7 @@ PR上の記録では独立レビューに阻害指摘はなく、軽微な表現
 
 ### ACT-DOC-003：Orchestrator の管理者向け概要 — ateliers-ai-orchestrator PR #7
 
-関連する検討: [IMP-DOC-001](#imp-doc-001詳細を保ったまま読者別の入口と粒度を整える)
+関連する検討: IMP-DOC-001
 
 [PR #7](https://github.com/Ateliers-Dev/ateliers-ai-orchestrator/pull/7) は2026-11-23にマージされました。Phase 1 の要件と Phase 2 の設計詳細を保持したまま、管理者が結果、判断事項、リスク、次工程を短時間で把握できる約1ページの概要を追加し、詳細原本へリンクしました。未決事項、実接続・隔離の未検証範囲、Run Resume の扱いも明示しています。
 
