@@ -25,7 +25,7 @@ PR #6 の要件・設計文書は、実装者が実装・検証するために�
 
 ## 改善手順・検討（Improvement Process）
 
-関連事象: [OBS-DOC-001](#obs-doc-001管理者と実装者で必要な情報粒度が異なる)
+関連事象: OBS-DOC-001
 
 ### IMP-DOC-001：詳細を保ったまま読者別の入口と粒度を整える
 
@@ -41,7 +41,7 @@ PR #6 の要件・設計文書は、実装者が実装・検証するために�
 
 ### ACT-DOC-001：共通文書ガイドライン — ateliers-website PR #26
 
-関連する検討: [IMP-DOC-001](#imp-doc-001詳細を保ったまま読者別の入口と粒度を整える)
+関連する検討: IMP-DOC-001
 
 [PR #26](https://github.com/Ateliers-Dev/ateliers-website/pull/26) は2026-11-23にマージされました。Feature / Reference の分類を保ったまま、Management Summary、Project Overview、Technical Detail の役割、相互参照、判断・リスクの明示、過剰な文書分割の抑制を追加しました。
 
