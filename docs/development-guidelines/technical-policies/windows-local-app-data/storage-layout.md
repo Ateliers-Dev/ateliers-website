@@ -24,10 +24,13 @@ var localRoot = Environment.GetFolderPath(
 アプリケーションの標準ルートは、次の構造を推奨します。
 
 ```text
-%LOCALAPPDATA%\Ateliers-Dev\<Application>├── data\
-├── logs\
-├── cache\
-└── temp\
+%LOCALAPPDATA%
+└── Ateliers-Dev
+    └── <Application>
+        ├── data
+        ├── logs
+        ├── cache
+        └── temp
 ```
 
 `<Application>` は製品の安定した識別名です。ディレクトリ名を変える場合は既存データの探索・移行方針を合わせて決めます。Debug と Release でデータを分ける場合は、各環境が別の明示的なサブディレクトリを使うなど、誤接続を防ぐ設計にします。

@@ -22,8 +22,10 @@ Ateliers-Dev の Windows アプリケーションが設定、永続データ、�
 |---|---|
 | ユーザー単位の基準領域 | .NET の `Environment.SpecialFolder.LocalApplicationData` からアプリケーション固有フォルダーを解決する実装がある。Windows の通常表記では `%LOCALAPPDATA%` 配下となる。 |
 | 設定と端末固有データ | 一方の実装では小容量の設定を `%APPDATA%\Ateliers-Dev\Ai-Assistant[.Debug]\settings.json` に、端末固有データを `%LOCALAPPDATA%\Ateliers-Dev\Ai-Assistant[.Debug]\` に分ける。Debug と Release の保存先も分離している。 |
-| データベース | 同じ実装は `data\assistant.db` を SQLite 用ファイルとして構成し、会話ストアからそのパスを利用する。ここでは SQLite 固有の接続・スキーマ設計は定めない。 |
-| ログ、記事、キャッシュ、一時データ | ログは Local 配下でローテーションし、記事ファイルも Local 配下に保存する。キャッシュと一時データ用の場所は用途別に定義され、必要になるまでディレクトリを作らない設計である。 |
+| データベース | 同じ実装は `data\assistant.db` を SQLite 用ファイルとして構成し、会話・記事データのストアからそのパスを利用する。ここでは SQLite 固有の接続・スキーマ設計は定めない。 |
+| ファイルの更新と削除 | 設定と記事 Markdown は一意な `.tmp` ファイルへ書いてから対象ファイルを置き換え、残った一時ファイルは削除を試みる。記事削除では関連ファイルとデータベース記録を削除する。 |
+| 診断ログ | Local 配下に保存し、1ファイルが 2 MiB を超える前にローテーションする。ログ系統ごとに最大3世代を保つ実装である。 |
+| キャッシュと一時データ | キャッシュと Temp の場所は用途別に定義され、パス解決だけではフォルダーを作らない。Temp の上限と清掃は[一時データと容量管理](./temporary-data.md)に記載する。 |
 | 実行記録 | もう一方の CLI 実装は既定で `%LOCALAPPDATA%\Ateliers-Dev\Ai-Orchestrator\runs\` と `lifecycle.jsonl` を使う。実行ごとに `events.jsonl` とレポートを作成し、コマンド引数で別の出力先も指定できる。 |
 | 旧保存先 | CLI の README は旧保存先の既存データを自動移動・削除しないと説明している。実装と説明の範囲では、旧データをそのまま残す扱いである。 |
 
