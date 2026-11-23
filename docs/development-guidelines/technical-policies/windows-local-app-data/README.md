@@ -15,5 +15,7 @@ unlisted: true
 - [作成・更新・削除と移行](./lifecycle.md)
 - [実行記録と監査データ](./records-and-audit.md)
 - [一時データと容量管理](./temporary-data.md)
+- [Windows ローカル SQLite データ設計](./sqlite-reference/README.md)
 
 SQLite は将来のデータ基盤の候補として扱います。MCP から SQLite へ直接アクセスする案と、ローカル API を介する案はいずれも構想であり、この段階では方式を固定しません。
+
