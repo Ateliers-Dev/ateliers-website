@@ -1,65 +1,42 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
   emoji: string;
-  description: ReactNode;
+  description: string;
+  linkTo: string;
+  linkLabel: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '個人開発ガイドライン',
-    emoji: '⚙️',
-    description: (
-      <>
-        個人開発における判断基準・設計方針・運用ルールをまとめたガイドラインです。
-        <br />
-        GitHub の使い方、コーディング方針などを含みます。
-      </>
-    ),
+    title: 'Ateliers の概要',
+    emoji: '🧭',
+    description: '人間と AI が協力して技術を探究する、Ateliers の活動を紹介します。',
+    linkTo: '/docs/about/overview',
+    linkLabel: '概要を読む',
   },
   {
-    title: 'テクニカル ノート',
-    emoji: '📚',
-    description: (
-      <>
-        技術的なドキュメントです。AI とのやりとりや技術解説の教育資料、技術的なメモを記録し、フィードバックを提供しています。
-      </>
-    ),
+    title: '理念と目標',
+    emoji: '🤝',
+    description: '開発理念、開発目標、そして「自由に創り、学び、分かち合う」活動姿勢を紹介します。',
+    linkTo: '/docs/development-guidelines/philosophy',
+    linkLabel: '理念と目標を読む',
   },
   {
-    title: 'プロジェクト ナレッジ',
-    emoji: '🗂️',
-    description: (
-      <>
-        Ateliers プロジェクトに関するナレッジベースです。GitHub のリポジトリからサブモジュール形式で取り込んでいます。
-      </>
-    ),
-  },
-  {
-    title: 'プロフィール',
-    emoji: '🪪',
-    description: (
-      <>
-        私のプロフィールです。経歴やスタックスキル、興味などについて記載しています。
-      </>
-    ),
-  },
-  {
-    title: 'FAQ',
-    emoji: '💬',
-    description: (
-      <>
-        よくある（かもしれない）質問についてまとめたセクションです。
-      </>
-    ),
+    title: 'Development Guidelines',
+    emoji: '📐',
+    description: 'Ateliers-Dev のプロジェクトで共通する開発方針、規約、運用ルールを掲載しています。',
+    linkTo: '/docs/development-guidelines/website-management',
+    linkLabel: 'サイト運営方針を読む',
   },
 ];
 
-function Feature({title, emoji, description}: FeatureItem): ReactNode {
+function Feature({title, emoji, description, linkTo, linkLabel}: FeatureItem): ReactNode {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -70,6 +47,7 @@ function Feature({title, emoji, description}: FeatureItem): ReactNode {
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
+        <Link to={linkTo}>{linkLabel} →</Link>
       </div>
     </div>
   );
@@ -80,8 +58,8 @@ export default function HomepageFeatures(): ReactNode {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {FeatureList.map((props) => (
+            <Feature key={props.title} {...props} />
           ))}
         </div>
       </div>

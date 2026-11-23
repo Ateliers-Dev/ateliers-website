@@ -15,7 +15,7 @@ function HomepageHeader(): ReactNode {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className={styles.topContainer}>
         <div className={styles.image}>
-          <img src={titleImg} alt="ateliers.dev" />
+          <img src={titleImg} alt="Ateliers" />
         </div>
         <div className={styles.topTitleContent}>
           <h1>{siteConfig.title}</h1>
@@ -32,10 +32,8 @@ function HomepageHeader(): ReactNode {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
-
   return (
-    <Layout title={siteConfig.title} description={customConfig.siteShortDescription}>
+    <Layout description={customConfig.siteShortDescription}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
