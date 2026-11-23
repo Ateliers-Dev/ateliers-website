@@ -5,7 +5,7 @@ unlisted: true
 # docs フォルダ
 
 > 作成日: 2026-11-18
-> 更新日: 2026-11-23
+> 更新日: 2026-11-24
 > 作成者: Codex
 
 この README は、AI エージェントが開発ドキュメントの配置と参照先を把握するための索引です。サイトの利用者向けサイドバーには掲載しません。
@@ -30,6 +30,7 @@ unlisted: true
 - [哲学と目標](development-guidelines/philosophy.md)：Ateliers の理念と目標の詳細な原本。
 - [Technical Policies README](development-guidelines/technical-policies/README.md)：共通の技術・開発方針と下位フォルダの案内。
 - [AI 協働方針](development-guidelines/technical-policies/ai-collaboration-policy.md)：AI エージェントの協働原則と権限の扱い。
+- [AGENTS.md 作成ガイドライン](development-guidelines/technical-policies/agent-instructions-guidelines.md)：リポジトリ向け AI 作業指示の作成・配置・更新。
 - [開発プロセスガイドライン](development-guidelines/technical-policies/development-process-guidelines.md)：計画から完了までの共通プロセス。
 - [品質ガイドライン](development-guidelines/technical-policies/quality-guidelines.md)：目的・要求・リスクに応じた品質判断。
 - [レビュー工程と品質判定](development-guidelines/technical-policies/review-process-guidelines.md)：レビューの責務、証拠、判定の扱い。
