@@ -10,16 +10,9 @@ unlisted: true
 
 この README は、AI エージェントが開発ドキュメントの配置と参照先を把握するための索引です。サイトの利用者向けサイドバーには掲載しません。
 
-## まず確認する文書
+## 参照方法
 
-| 目的 | 原本 |
-| --- | --- |
-| このリポジトリで作業する際の指示 | `AGENTS.md` |
-| サイトの目的、情報分類、掲載場所、原本管理 | [Website Management](development-guidelines/website-management.md) |
-| 文書の種類、Front Matter、記述・更新方法 | [ドキュメント作成ガイドライン](development-guidelines/documentation-guidelines.md) |
-| 理念や目標の詳細な定義 | [哲学と目標](development-guidelines/philosophy.md) |
-
-ここに記載する説明は文書の入口を示すものであり、各原本の内容を置き換えません。判断や変更を行う際は、該当する原本を確認してください。
+このリポジトリでの作業指示はルートの `AGENTS.md` を確認してください。続けて、以下の一覧から作業目的に合う文書を選び、判断の根拠として該当する原本を開きます。サイトの分類・配置は Website Management、文書作成はドキュメント作成ガイドライン、理念の解釈は哲学と目標がそれぞれ原本です。
 
 ## 文書一覧
 
