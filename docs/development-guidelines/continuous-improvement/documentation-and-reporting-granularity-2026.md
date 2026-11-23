@@ -43,7 +43,7 @@ PR #6 の要件・設計文書は、実装者が実装・検証するために�
 
 関連する検討: IMP-DOC-001
 
-[PR #26](https://github.com/Ateliers-Dev/ateliers-website/pull/26) は2026-11-23にマージされました。Feature / Reference の分類を保ったまま、Management Summary、Project Overview、Technical Detail の役割、相互参照、判断・リスクの明示、過剰な文書分割の抑制を追加しました。
+[PR #26](https://github.com/Ateliers-Dev/ateliers-website/pull/26) は2026-11-24にマージされました。Feature / Reference の分類を保ったまま、Management Summary、Project Overview、Technical Detail の役割、相互参照、判断・リスクの明示、過剰な文書分割の抑制を追加しました。
 
 PR上の記録では独立した静的レビューに阻害指摘はなく、レビュー中に見つかった表の崩れは修正・再確認されています。文書のみの変更としてビルド・テストは実施されていません。
 
@@ -51,7 +51,7 @@ PR上の記録では独立した静的レビューに阻害指摘はなく、レ
 
 関連する検討: IMP-DOC-001
 
-[PR #35](https://github.com/Ateliers-Dev/ateliers-ai-skills/pull/35) は2026-11-23にマージされました。再利用可能な要約Skillを追加し、文書レビューSkillへ読者適合と概要・詳細間の整合性確認を加えました。
+[PR #35](https://github.com/Ateliers-Dev/ateliers-ai-skills/pull/35) は2026-11-24にマージされました。再利用可能な要約Skillを追加し、文書レビューSkillへ読者適合と概要・詳細間の整合性確認を加えました。
 
 PR上の記録では独立レビューに阻害指摘はなく、軽微な表現上の指摘を修正しました。作者による架空資料1件の非盲検自己試行で期待事項との照合を行っていますが、独立した行動評価ではありません。Skill Catalog と npm のチェックは未実施で、実利用での品質評価は限定的です。
 
@@ -59,7 +59,7 @@ PR上の記録では独立レビューに阻害指摘はなく、軽微な表現
 
 関連する検討: IMP-DOC-001
 
-[PR #7](https://github.com/Ateliers-Dev/ateliers-ai-orchestrator/pull/7) は2026-11-23にマージされました。Phase 1 の要件と Phase 2 の設計詳細を保持したまま、管理者が結果、判断事項、リスク、次工程を短時間で把握できる約1ページの概要を追加し、詳細原本へリンクしました。未決事項、実接続・隔離の未検証範囲、Run Resume の扱いも明示しています。
+[PR #7](https://github.com/Ateliers-Dev/ateliers-ai-orchestrator/pull/7) は2026-11-24にマージされました。Phase 1 の要件と Phase 2 の設計詳細を保持したまま、管理者が結果、判断事項、リスク、次工程を短時間で把握できる約1ページの概要を追加し、詳細原本へリンクしました。未決事項、実接続・隔離の未検証範囲、Run Resume の扱いも明示しています。
 
 PR上の記録では概要の主張を要件・設計原本と照合し、独立した静的レビューに阻害指摘はありませんでした。実装テストは対象外です。
 
