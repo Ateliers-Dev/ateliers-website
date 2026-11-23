@@ -60,7 +60,7 @@ AI エージェントが、これらの方針を独自に再定義してはい�
 
 ## 文書の粒度
 
-文書や作業報告では、読者と目的に合わせて情報の粒度と提示順を選びます。管理者向け概要は判断・リスク・次工程を先に示し、仕様や実装の詳細を代替しないよう原本へリンクします。共通基準は [ドキュメント作成ガイドライン](docs/development-guidelines/documentation-guidelines.md) を参照し、このファイルへ重複した規約を増やしません。
+文書や作業報告では、読者と目的に合わせて情報の粒度と提示順を選びます。管理者向け概要は判断・リスク・次工程を先に示し、仕様や実装の詳細を代替しないよう原本へリンクします。共通基準は [ドキュメント作成ガイドライン](docs/development-guidelines/documentation-guidelines.md) を参照し、このファイルへ重複した規約を増やしません。継続改善の知見を記録・再評価するときは、[継続的改善ガイドライン](docs/development-guidelines/technical-policies/continuous-improvement-guidelines.md)を参照します。
 
 ## 2. ドキュメントの責務
 

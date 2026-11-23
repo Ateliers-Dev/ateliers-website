@@ -27,6 +27,8 @@ unlisted: true
 
 - [Website Management](development-guidelines/website-management.md)：サイトの目的、情報分類、掲載場所、原本管理。
 - [ドキュメント作成ガイドライン](development-guidelines/documentation-guidelines.md)：文書の種類、Front Matter、記述・更新方法。
+- [継続的改善ガイドライン](development-guidelines/technical-policies/continuous-improvement-guidelines.md)：事象・検討・対処結果を関連付けて記録し、必要時に再評価する方法。
+- [継続的改善の記録一覧](development-guidelines/continuous-improvement/README.md)：再利用可能な改善事例。
 - [哲学と目標](development-guidelines/philosophy.md)：Ateliers の理念と目標の詳細な原本。
 - [Technical Policies README](development-guidelines/technical-policies/README.md)：共通の技術・開発方針と下位フォルダの案内。
 - [AI 協働方針](development-guidelines/technical-policies/ai-collaboration-policy.md)：AI エージェントの協働原則と権限の扱い。
@@ -37,6 +39,10 @@ unlisted: true
 - [ブランチ戦略](development-guidelines/technical-policies/branch-strategy-guidelines.md)：共通ブランチ運用方針。
 - [GitLab Flow 品質ゲート](development-guidelines/technical-policies/gitlab-flow-quality-gates.md)：GitLab Flow における遷移別の品質ゲート。
 - [リポジトリ公開・非公開方針](development-guidelines/technical-policies/repository-visibility-policy.md)：リポジトリの公開判断と維持管理。
+
+### 継続的改善の事例
+
+- [管理者向け文書・報告の情報粒度改善](development-guidelines/continuous-improvement/documentation-and-reporting-granularity-2026.md)：管理者向け概要と実装者向け詳細を併存させた事例。実運用の効果は継続観察中。
 
 ### 再利用テンプレート
 
