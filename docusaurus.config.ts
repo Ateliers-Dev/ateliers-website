@@ -3,17 +3,17 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Atelier for `Yuu`',
-  tagline: 'For a Better Future. －「より良い未来のために。」',
+  title: 'Ateliers',
+  tagline: 'For a Better Future. — より良い未来のために。',
   favicon: 'img/favicon.ico',
 
   future: {
     v4: true,
   },
 
-  // GitHub Pages deployment settings for Ateliers-Dev/ateliers-website.
-  url: 'https://ateliers-dev.github.io',
-  baseUrl: '/ateliers-website/',
+  // GitHub Pages deployment settings for ateliers.dev.
+  url: 'https://ateliers.dev',
+  baseUrl: '/',
   organizationName: 'Ateliers-Dev',
   projectName: 'ateliers-website',
 
