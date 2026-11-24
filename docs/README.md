@@ -5,7 +5,7 @@ unlisted: true
 # docs フォルダ
 
 > 作成日: 2026-11-18
-> 更新日: 2026-11-24
+> 更新日: 2026-11-25
 > 作成者: Codex
 
 この README は、AI エージェントが開発ドキュメントの配置と参照先を把握するための索引です。サイトの利用者向けサイドバーには掲載しません。
@@ -22,6 +22,7 @@ unlisted: true
 
 - [活動概要](about/overview.md)：Ateliers-Dev の活動と理念の概要。
 - [メンバー](about/members.md)：公開対象のメンバー紹介。
+- [AI コンプライアンス教育](about/ai-compliance-education.md)：人間と AI の協働における教育・行動・改善の取り組み。
 
 ### Development Guidelines
 
