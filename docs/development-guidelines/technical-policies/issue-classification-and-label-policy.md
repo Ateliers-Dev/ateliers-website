@@ -65,7 +65,3 @@ Status と Priority は GitHub Projects で管理します。状態や優先度�
 ## 今回の適用範囲
 
 今回の変更は運用方針の文書化と参照の配置整理です。GitHub Projects への Issue 集約、既存 Issue の再分類、ラベルの作成・削除・一括変更、自動同期ワークフローの実装や実行は行いません。
-
-## 参照
-
-- [Ateliers-Dev/.github にある正本への参照](https://github.com/Ateliers-Dev/.github/blob/main/docs/issue-classification-and-label-policy.md)
