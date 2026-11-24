@@ -1,16 +1,67 @@
 ---
 title: Issue Type と共通ラベル
-description: Ateliers-Dev の Issue Type と共通ラベルの運用方針を案内します。
+description: Ateliers-Dev の Issue Type と共通ラベルの運用方針を定めます。
 ---
 
-# Issue Type と共通ラベル
+# Issue Type と共通ラベル運用方針
 
 > 作成日: 2026-11-24
 > 更新日: 2026-11-24
 > 作成者: Codex
 
-Ateliers-Dev では、組織共通の Issue Type とラベルを使って Issue を分類します。運用方針の正本と共通ラベル定義は Ateliers-Dev/.github で管理しています。
+## 目的と適用範囲
 
-分類の際は、[Issue Type・共通ラベル運用方針](https://github.com/Ateliers-Dev/.github/blob/main/docs/issue-classification-and-label-policy.md)を参照してください。Ateliers-Dev の人間と AI エージェントは、同じ基準を使います。
+この文書は、Ateliers-Dev のリポジトリで Issue を分類するときの共通方針を定めます。人間と AI エージェントは同じ基準を使います。
 
-このページは正本への案内です。運用ルールやラベル定義をサイト側に複製しません。
+この文書を組織共通の運用方針と共通ラベル定義の正本とします。Ateliers-Dev の組織 Issue Type は GitHub 組織の設定で管理します。共通ラベルの定義は本書で管理し、Development Guidelines や各リポジトリの案内から本書を参照します。Ateliers-Dev/.github には本書への参照を置き、方針本文を複製しません。
+
+## Issue Type
+
+組織の Issue Type は次の3種類です。各 Issue には内容に最も合う Type を1つ設定します。
+
+| Issue Type | 用途 |
+| --- | --- |
+| `Task` | 作業、調査、保守、環境や文書の整備 |
+| `Bug` | 期待される仕様や動作を満たさない不具合への対応 |
+| `Feature` | 新しい機能や能力の追加 |
+
+## 共通ラベル
+
+共通ラベルには GitHub 標準の次の10種類を使います。表の説明に沿って、Issue の内容や扱いに当てはまるラベルだけを付けます。
+
+| ラベル | 用途 |
+| --- | --- |
+| `accessibility` | アクセシビリティの改善や対応 |
+| `bug` | 不具合に関する Issue |
+| `documentation` | ドキュメントの追加・修正・改善 |
+| `duplicate` | 既存の Issue と重複しているもの |
+| `enhancement` | 機能や既存の成果物の追加・改善 |
+| `good first issue` | 初めて参加する人が取り組みやすい Issue |
+| `help wanted` | 追加の協力を求める Issue |
+| `invalid` | Issue として有効な報告・提案に当たらないもの |
+| `question` | 質問や追加確認を扱う Issue |
+| `wontfix` | 対応しないと決定した Issue |
+
+## 組み合わせと付与方法
+
+Issue Type と Label は独立した観点で分類します。Issue Type は達成する内容の種類を、Label は Issue の属性や扱いを表します。両者の意味が重複しても構いません。組み合わせを一律に禁止しません。
+
+例えば、ドキュメントの改善は `Task` と `documentation` または `enhancement` を組み合わせられます。不具合対応は `Bug` と `bug` を組み合わせられます。内容に該当する場合は、複数のラベルを付けられます。
+
+ラベルは必要なものだけを付けます。該当するラベルがない場合は、ラベルを付けなくても構いません。Issue Type が設定されていることを理由に、対応するラベルを必ず追加する必要はありません。
+
+現在、リポジトリ固有のラベルは追加しません。共通ラベルで扱えない具体的な必要が生じたときに、用途と保守負担を確認して追加を検討します。
+
+## Status と Priority
+
+Status と Priority は GitHub Projects で管理します。状態や優先度を示す独自ラベルは作らず、Issue Type や共通ラベルで代用しません。
+
+## 共通ラベルの同期
+
+共通ラベルは本書の定義を正本として、既存の対象リポジトリと新しく作成するリポジトリへ自動同期することを、今回からの組織運用方針とします。定義の変更時も同期対象へ反映し、新規リポジトリの作成時にも設定を適用します。
+
+この文書の更新だけでは、自動同期の仕組みや各リポジトリへの反映が実装・完了したことを意味しません。同期ワークフローの実装と実行結果は別途確認し、確認できるまでは全リポジトリへの同期済みと扱いません。同期の仕組みは Ateliers-Dev/.github で管理し、本書を参照します。
+
+## 今回の適用範囲
+
+今回の変更は運用方針の文書化と参照の配置整理です。GitHub Projects への Issue 集約、既存 Issue の再分類、ラベルの作成・削除・一括変更、自動同期ワークフローの実装や実行は行いません。
