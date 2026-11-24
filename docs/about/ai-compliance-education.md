@@ -15,7 +15,7 @@ Ateliers は、人間と AI が協働するときの安全や信頼を、制御�
 
 人間も AI も判断を誤ることがあります。曖昧な依頼、情報不足、権限やツール、確認の方法など、協働環境が誤りに関わることもあります。結果を AI だけの責任と決めつけず、何が起きたかを確かめ、次の改善につなげます。
 
-この取り組みは、教育だけで AI の安全性が確保できる、または教育によってモデルが恒久的に学習する、と主張するものではありません。既存の [AI 協働方針](./technical-policies/ai-collaboration-policy) と [Ateliers の理念と目標](./philosophy) に沿い、教育・運用・検証の方法を調査する活動です。
+この取り組みは、教育だけで AI の安全性が確保できる、または教育によってモデルが恒久的に学習する、と主張するものではありません。既存の [AI 協働方針](../development-guidelines/technical-policies/ai-collaboration-policy) と [Ateliers の理念と目標](../development-guidelines/philosophy) に沿い、教育・運用・検証の方法を調査する活動です。
 
 ## 人間と AI の双方について考えること
 
