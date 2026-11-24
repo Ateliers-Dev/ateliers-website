@@ -22,6 +22,7 @@ unlisted: true
 
 - [活動概要](about/overview.md)：Ateliers-Dev の活動と理念の概要。
 - [メンバー](about/members.md)：公開対象のメンバー紹介。
+- [AI コンプライアンス教育](about/ai-compliance-education.md)：人間と AI の協働における教育・行動・改善の取り組み。
 
 ### Development Guidelines
 
